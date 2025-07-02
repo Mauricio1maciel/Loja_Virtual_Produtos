@@ -7,6 +7,7 @@ import NovaAvaliacao from "./paginas/NovaAvaliacao";
 import ProdutoDetalhado from "./paginas/ProdutoDetalhado";
 import ListaCategorias from "./paginas/ListaCategorias";
 import CadastrarCategoria from "./paginas/FormularioCategoria";
+import Cadastro from "./paginas/cadastro";
 
 
 export default function App() {
@@ -23,7 +24,7 @@ export default function App() {
         <Route path="/produto/editar/:idProduto" element={<PaginaSegura> <FormularioProduto /> </PaginaSegura>} />
         <Route path="/avaliacoes/produto/:idProduto" element={<PaginaSegura> <NovaAvaliacao /> </PaginaSegura>} />
         <Route path="/avaliar/:idProduto" element={<PaginaSegura> <NovaAvaliacao /> </PaginaSegura>} />
-
+         <Route path="/cadastro" element={ <Cadastro /> } />
         <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
